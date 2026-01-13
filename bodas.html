@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodas - Estudio Fotográfico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">La Sessione</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="galeria-contenedor">
+        <h1>Bodas</h1>
+        <button onclick="window.location.href='galeria.html'" class="btn-regresar">Regresar a Galería</button>
+        <div class="galeria-grid">
+            <div class="imagen-card">
+                <img src="img/bodas1.jpg" alt="Boda 1">
+            </div>
+            <div class="imagen-card">
+                <img src="img/bodas2.jpg" alt="Boda 2">
+            </div>
+            <div class="imagen-card">
+                <img src="img/bodas3.jpg" alt="Boda 3">
+            </div>
+            <div class="imagen-card">
+                <img src="img/bodas4.jpg" alt="Boda 4">
+            </div>
+            <div class="imagen-card">
+                <img src="img/bodas5.jpg" alt="Boda 5">
+            </div>
+            <div class="imagen-card">
+                <img src="img/bodas6.jpg" alt="Boda 6">
+            </div>
+            <div class="imagen-card">
+                <img src="img/bodas7.jpg" alt="Boda 7">
+            </div>
+            <div class="imagen-card">
+                <img src="img/bodas8.jpg" alt="Boda 8">
+            </div>
+            <div class="imagen-card">
+                <img src="img/bodas9.jpg" alt="Boda 9">
+            </div>
+            <div class="imagen-card">
+                <img src="img/bodas10.jpg" alt="Boda 10">
+            </div>
+        </div>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" id="lightbox-img">
+        <button class="lightbox-prev">&lt;</button>
+        <button class="lightbox-next">&gt;</button>
+    </div>
+
+    <footer>
+        <p>© 2026 La Sessione Fotografica - Todos los derechos reservados</p>
+    </footer>
+    <script src="galeria.js"></script>
+</body>
+</html>

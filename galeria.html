@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Estudio Fotográfico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">La Sessione</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="galeria-contenedor">
+        <div class="filtros-galeria">
+            <button class="filtro-btn activo" data-categoria="todos">Todos</button>
+            <button class="filtro-btn" data-categoria="bodas">Bodas</button>
+            <button class="filtro-btn" data-categoria="retratos">Retratos</button>
+            <button class="filtro-btn" data-categoria="eventos">Eventos</button>
+        </div>
+
+        <div class="galeria-grid">
+            <div class="categoria-seccion" id="bodas">
+                <h2>Bodas</h2>
+                <div class="imagenes-grid">
+                    <div class="imagen-card" data-categoria="bodas">
+                        <img src="img/boda1.jpg" alt="Boda 1">
+                        <div class="imagen-overlay">
+                            <h3>Boda Marisol & Victor</h3>
+                            <p>Julio, 2019</p>
+                        </div>
+                    </div>
+                    <!-- Agregar más imágenes de bodas -->
+                </div>
+            </div>
+
+            <div class="categoria-seccion" id="retratos">
+                <h2>Retratos</h2>
+                <div class="imagenes-grid">
+                    <div class="imagen-card" data-categoria="retratos">
+                        <img src="img/retrato1.jpg" alt="Retrato 1">
+                        <div class="imagen-overlay">
+                            <h3>4° Aniversario Jorgito</h3>
+                            <p>Tales in the Forest</p>
+                        </div>
+                    </div>
+                    <!-- Agregar más retratos -->
+                </div>
+            </div>
+
+            <div class="categoria-seccion" id="eventos">
+                <h2>Eventos</h2>
+                <div class="imagenes-grid">
+                    <div class="imagen-card" data-categoria="eventos">
+                        <img src="img/evento1.jpg" alt="Evento 1">
+                        <div class="imagen-overlay">
+                            <h3>XV Irlanda Daniela</h3>
+                            <p>Barrio Antiguo, Julio 2022</p>
+                        </div>
+                    </div>
+                    <!-- Agregar más eventos -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 La Sessione Fotografica - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="galeria.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const botonesFiltro = document.querySelectorAll('.filtro-btn');
+
+            botonesFiltro.forEach(boton => {
+                boton.addEventListener('click', () => {
+                    const categoria = boton.getAttribute('data-categoria');
+
+                    // Redirigir a las páginas correspondientes
+                    if (categoria === 'bodas') {
+                        window.location.href = 'bodas.html';
+                    } else if (categoria === 'retratos') {
+                        window.location.href = 'retratos.html';
+                    } else if (categoria === 'eventos') {
+                        window.location.href = 'eventos.html';
+                    } else if (categoria === 'todos') {
+                        window.location.href = 'galeria.html';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

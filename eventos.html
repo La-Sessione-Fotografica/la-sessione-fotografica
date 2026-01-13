@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Estudio Fotográfico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">La Sessione</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="galeria-contenedor">
+        <h1>Eventos</h1>
+        <button onclick="window.location.href='galeria.html'" class="btn-regresar">Regresar a Galería</button>
+        <div class="galeria-grid">
+            <!-- Agregar imágenes específicas de eventos -->
+            <div class="imagen-card">
+                <img src="img/eventos1.jpg" alt="Evento 1">
+            </div>
+            <div class="imagen-card">
+                <img src="img/eventos2.jpg" alt="Evento 2">
+            </div>
+            <div class="imagen-card">
+                <img src="img/eventos3.jpg" alt="Evento 3">
+            </div>
+            <div class="imagen-card">
+                <img src="img/eventos4.jpg" alt="Evento 4">
+            </div>
+            <div class="imagen-card">
+                <img src="img/eventos5.jpg" alt="Evento 5">
+            </div>
+            <div class="imagen-card">
+                <img src="img/eventos6.jpg" alt="Evento 6">
+            </div>
+            <div class="imagen-card">
+                <img src="img/eventos7.jpg" alt="Evento 7">
+            </div>
+            <div class="imagen-card">
+                <img src="img/eventos8.jpg" alt="Evento 8">
+            </div>
+            <div class="imagen-card">
+                <img src="img/eventos9.jpg" alt="Evento 9">
+            </div>
+            <div class="imagen-card">
+                <img src="img/eventos10.jpg" alt="Evento 10">
+            </div>
+            <div class="imagen-card">
+                <img src="img/eventos10.jpg" alt="Evento 10">
+            </div><div class="imagen-card">
+                <img src="img/eventos11.jpg" alt="Evento 11">
+            </div><div class="imagen-card">
+                <img src="img/eventos12.jpg" alt="Evento 12">
+            </div><div class="imagen-card">
+                <img src="img/eventos13.jpg" alt="Evento 13">
+            </div><div class="imagen-card">
+                <img src="img/eventos14.jpg" alt="Evento 14">
+            </div><div class="imagen-card">
+                <img src="img/eventos15.jpg" alt="Evento 15">
+        </div>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" id="lightbox-img">
+        <button class="lightbox-prev">&lt;</button>
+        <button class="lightbox-next">&gt;</button>
+    </div>
+
+    <footer>
+        <p>© 2026 La Sessione Fotografica - Todos los derechos reservados</p>
+    </footer>
+    <script src="galeria.js"></script>
+</body>
+</html>

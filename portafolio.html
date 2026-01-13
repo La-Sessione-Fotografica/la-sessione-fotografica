@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Estudio Fotográfico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">La Sessione</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="portafolio.html" class="activo">Portafolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="portafolio-contenedor">
+        <h1 class="fade-in">Portafolio Artístico</h1>
+        
+        <div class="galeria-artistica-grid">
+            <div class="foto-item" style="--rotate: -3deg">
+                <img src="img/portfolio1.jpg" alt="Fotografía 1">
+            </div>
+            <div class="foto-item" style="--rotate: 2deg">
+                <img src="img/portfolio2.jpg" alt="Fotografía 2">
+            </div>
+            <div class="foto-item" style="--rotate: -1deg">
+                <img src="img/portfolio3.jpg" alt="Fotografía 3">
+            </div>
+            <div class="foto-item" style="--rotate: 1deg">
+                <img src="img/portfolio4.jpg" alt="Fotografía 4">
+            </div>
+            <div class="foto-item" style="--rotate: 3deg">
+                <img src="img/portfolio5.jpg" alt="Fotografía 5">
+            </div>
+            <div class="foto-item" style="--rotate: -2deg">
+                <img src="img/portfolio6.jpg" alt="Fotografía 6">
+            </div>
+            <div class="foto-item" style="--rotate: 1.5deg">
+                <img src="img/portfolio7.jpg" alt="Fotografía 7">
+            </div>
+            <div class="foto-item" style="--rotate: -1.5deg">
+                <img src="img/portfolio8.jpg" alt="Fotografía 8">
+            </div>
+            <div class="foto-item" style="--rotate: 3deg">
+                <img src="img/portfolio9.jpg" alt="Fotografía 9">
+            </div>
+            <div class="foto-item" style="--rotate: -3deg">
+                <img src="img/portfolio10.jpg" alt="Fotografía 10">
+            </div>
+            <div class="foto-item" style="--rotate: 1deg">
+                <img src="img/portfolio11.jpg" alt="Fotografía 11">
+            </div>
+            <div class="foto-item" style="--rotate: -1deg">
+                <img src="img/portfolio12.jpg" alt="Fotografía 12">
+            </div>
+        </div>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" id="lightbox-img">
+        <button class="lightbox-prev">&lt;</button>
+        <button class="lightbox-next">&gt;</button>
+    </div>
+    
+    <script src="portafolio.js"></script>
+
+    <footer>
+        <p>© 2026 La Sessione Fotografica - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
